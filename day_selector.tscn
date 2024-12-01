@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceds2v20cxgkk"]
+
+[ext_resource type="Script" path="res://day_selector.gd" id="1_enoav"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_enoav")
+
+[node name="InputText" type="TextEdit" parent="."]
+offset_left = 84.0
+offset_top = 89.0
+offset_right = 512.0
+offset_bottom = 317.0
+text = "ciaone"
+placeholder_text = "ciaone"
+
+[node name="DaySelector" type="OptionButton" parent="."]
+offset_left = 84.0
+offset_top = 22.0
+offset_right = 392.0
+offset_bottom = 67.0
+selected = 0
+item_count = 2
+popup/item_0/text = "day 01"
+popup/item_0/id = 0
+popup/item_1/text = "day 02"
+popup/item_1/id = 1
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 423.0
+offset_top = 19.0
+offset_right = 510.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "RUN"
+
+[node name="ResultText" type="TextEdit" parent="."]
+offset_left = 85.0
+offset_top = 320.0
+offset_right = 515.0
+offset_bottom = 356.0
+text = "Pick a day and copy the input to get a result"
+editable = false
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
