@@ -18,12 +18,14 @@ offset_left = 84.0
 offset_top = 22.0
 offset_right = 392.0
 offset_bottom = 67.0
-selected = 0
-item_count = 2
+selected = 2
+item_count = 3
 popup/item_0/text = "day 01"
 popup/item_0/id = 0
 popup/item_1/text = "day 02"
 popup/item_1/id = 1
+popup/item_2/text = "day 03"
+popup/item_2/id = 2
 
 [node name="Button" type="Button" parent="."]
 anchors_preset = 8
