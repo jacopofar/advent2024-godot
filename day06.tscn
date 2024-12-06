@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca8r47gr8fs6"]
+
+[ext_resource type="Script" uid="uid://bcair7nm1cimf" path="res://day_06.gd" id="1_ipqla"]
+
+[node name="Day06" type="Node2D"]
+script = ExtResource("1_ipqla")
+
+[node name="Window" type="Window" parent="."]
+title = "Day 06 - guard path"
+initial_position = 4
+size = Vector2i(800, 800)
+
+[connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]

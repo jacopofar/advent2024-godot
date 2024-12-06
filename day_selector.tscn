@@ -10,34 +10,17 @@ offset_left = 84.0
 offset_top = 89.0
 offset_right = 512.0
 offset_bottom = 317.0
-text = "47|53
-97|13
-97|61
-97|47
-75|29
-61|13
-75|53
-29|13
-97|29
-53|29
-61|53
-97|53
-61|29
-47|13
-75|47
-97|75
-47|61
-75|61
-47|29
-75|13
-53|13
-
-75,47,61,53,29
-97,61,53,29,13
-75,29,13
-75,97,47,61,53
-61,13,29
-97,13,75,29,47"
+text = "....#.....
+.........#
+..........
+..#.......
+.......#..
+..........
+.#..^.....
+........#.
+#.........
+......#...
+"
 placeholder_text = "got a problem?"
 
 [node name="DaySelector" type="OptionButton" parent="."]
@@ -45,8 +28,8 @@ offset_left = 84.0
 offset_top = 22.0
 offset_right = 392.0
 offset_bottom = 67.0
-selected = 4
-item_count = 5
+selected = 5
+item_count = 6
 popup/item_0/text = "day 01"
 popup/item_0/id = 0
 popup/item_1/text = "day 02"
@@ -57,6 +40,8 @@ popup/item_3/text = "day 04"
 popup/item_3/id = 3
 popup/item_4/text = "day 05"
 popup/item_4/id = 4
+popup/item_5/text = "day 06"
+popup/item_5/id = 5
 
 [node name="Button" type="Button" parent="."]
 anchors_preset = 8
