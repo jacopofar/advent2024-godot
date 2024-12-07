@@ -10,5 +10,5 @@ Sometimes a visualization is shown.
 
 ## Current status
 
-* Day 01 - 06 done
+* Day 01 - 07 done
 * For day 06 there's a visualization of the guard path and potential loops
