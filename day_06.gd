@@ -6,19 +6,19 @@ func vec2_to4(a: Vector2, b: Vector2) -> Vector4i:
 func vec4_to_pos(a: Vector4i) -> Vector2i:
 	return Vector2i(a.x, a.y)
 
-func unique_positions(pos_and_dirs: Dictionary) -> Dictionary:
+func unique_positions(pos_and_dirs: Dictionary[Vector4i, int]) -> Dictionary:
 	var ret = Dictionary()
 	for pos_and_dir in pos_and_dirs.keys():
 		ret[vec4_to_pos(pos_and_dir)] = 1
 	return ret
 
-func is_loop(pos_and_dirs: Dictionary, limits: Rect2i) -> bool:
+func is_loop(pos_and_dirs: Dictionary[Vector4i, int], limits: Rect2i) -> bool:
 	for pos_and_dir in pos_and_dirs.keys():
 		if not limits.has_point(vec4_to_pos(pos_and_dir)):
 			return false
 	return true 
 
-func simulate_guard(obstacles: Dictionary, guard_position: Vector2i, guard_direction: Vector2i, limits: Rect2i) -> Dictionary:
+func simulate_guard(obstacles: Dictionary[Vector2i, int], guard_position: Vector2i, guard_direction: Vector2i, limits: Rect2i) -> Dictionary[Vector4i, int]:
 	var visited_positions: Dictionary = {vec2_to4(guard_position, guard_direction): 1}
 	while limits.has_point(guard_position):
 		var next_position = guard_position + guard_direction
@@ -34,7 +34,7 @@ func simulate_guard(obstacles: Dictionary, guard_position: Vector2i, guard_direc
 
 func solve(input: String) -> void:
 	var rows = input.split("\n", false)
-	var obstacles: Dictionary = {}
+	var obstacles: Dictionary[Vector2i, int] = {}
 	var guard_position: Vector2i = Vector2i(-1, -1)
 	var guard_direction: Vector2i = Vector2i(0, 0)
 	var limits = Rect2i(0, 0, len(rows[0]), len(rows))

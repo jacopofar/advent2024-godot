@@ -20,8 +20,8 @@ func solve(input: String) -> void:
 	for n in range(len(numbers_a)):
 		tot += abs(numbers_a[n] - numbers_b[n])
 	### part 2
-	var count_a:Dictionary = {}
-	var count_b:Dictionary = {}
+	var count_a:Dictionary[int, int] = {}
+	var count_b:Dictionary[int, int] = {}
 	for n in range(len(numbers_a)):
 		count_a[numbers_a[n]] = count_a.get_or_add(numbers_a[n], 0) + 1
 		count_b[numbers_b[n]] = count_b.get_or_add(numbers_b[n], 0) + 1

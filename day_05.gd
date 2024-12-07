@@ -10,7 +10,7 @@ func is_valid_order(pages: PackedByteArray, order_rules: Dictionary) -> bool:
 				return false
 	return true
 
-func swap_if_needed(original_pages: PackedByteArray, order_rules: Dictionary) -> PackedByteArray:
+func swap_if_needed(original_pages: PackedByteArray, order_rules: Dictionary[int, Array]) -> PackedByteArray:
 	var pages = original_pages.duplicate()
 	for page_i in range(len(pages)):
 		if not order_rules.has(pages[page_i]):
@@ -26,7 +26,7 @@ func swap_if_needed(original_pages: PackedByteArray, order_rules: Dictionary) ->
 func solve(input: String) -> void:
 	var sections = input.split("\n\n", false)
 	assert (len(sections) == 2, "Input structure incorrct, maybe something is missing?")
-	var order_rules: Dictionary = {}
+	var order_rules: Dictionary[int, Array] = {}
 	for rule_desc in sections[0].split("\n"):
 		var from: int = int(rule_desc.split("|")[0])
 		var to: int = int(rule_desc.split("|")[1])
