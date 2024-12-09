@@ -10,6 +10,6 @@ Sometimes a visualization is shown.
 
 ## Current status
 
-* Day 01 - 08 done
+* Day 01 - 09 done
 * For day 06 there's a visualization of the guard path and potential loops
 * For day 08 there's a visualization of the antennas and related antinodes
