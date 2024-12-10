@@ -10,7 +10,10 @@ offset_left = 84.0
 offset_top = 89.0
 offset_right = 512.0
 offset_bottom = 317.0
-text = "2333133121414131402"
+text = "0123
+1234
+8765
+9876"
 placeholder_text = "got a problem?"
 
 [node name="DaySelector" type="OptionButton" parent="."]
@@ -18,8 +21,8 @@ offset_left = 84.0
 offset_top = 22.0
 offset_right = 392.0
 offset_bottom = 67.0
-selected = 8
-item_count = 9
+selected = 9
+item_count = 14
 popup/item_0/text = "day 01"
 popup/item_0/id = 0
 popup/item_1/text = "day 02"
@@ -38,6 +41,16 @@ popup/item_7/text = "day 08"
 popup/item_7/id = 7
 popup/item_8/text = "day 09"
 popup/item_8/id = 8
+popup/item_9/text = "day 10"
+popup/item_9/id = 9
+popup/item_10/text = "day 11"
+popup/item_10/id = 10
+popup/item_11/text = "day 12"
+popup/item_11/id = 11
+popup/item_12/text = "day 13"
+popup/item_12/id = 12
+popup/item_13/text = "day 14"
+popup/item_13/id = 13
 
 [node name="Button" type="Button" parent="."]
 anchors_preset = 8
