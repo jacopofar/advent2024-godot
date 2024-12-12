@@ -10,7 +10,11 @@ offset_left = 84.0
 offset_top = 89.0
 offset_right = 512.0
 offset_bottom = 317.0
-text = "125 17"
+text = "AAAA
+BBCD
+BBCC
+EEEC
+"
 placeholder_text = "got a problem?"
 
 [node name="DaySelector" type="OptionButton" parent="."]
@@ -18,7 +22,7 @@ offset_left = 84.0
 offset_top = 22.0
 offset_right = 392.0
 offset_bottom = 67.0
-selected = 10
+selected = 11
 item_count = 14
 popup/item_0/text = "day 01"
 popup/item_0/id = 0
