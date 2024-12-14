@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxuk3ayphto6d"]
+
+[ext_resource type="Script" uid="uid://dirwiipkx65e5" path="res://day_14.gd" id="1_pls53"]
+[ext_resource type="Script" uid="uid://dfls0amw4tr5p" path="res://canvas_day14.gd" id="2_hf266"]
+
+[node name="Window" type="Window"]
+position = Vector2i(0, 36)
+size = Vector2i(800, 800)
+script = ExtResource("1_pls53")
+
+[node name="Canvas" type="Node2D" parent="."]
+script = ExtResource("2_hf266")
+
+[node name="HSlider" type="HSlider" parent="Canvas"]
+offset_right = 781.0
+offset_bottom = 34.0
+ticks_on_borders = true
+
+[node name="Timer" type="Timer" parent="Canvas"]
+wait_time = 0.1
+autostart = true
+
+[connection signal="close_requested" from="." to="." method="_on_window_close_requested"]
+[connection signal="drag_ended" from="Canvas/HSlider" to="Canvas" method="_on_h_slider_drag_ended"]
+[connection signal="value_changed" from="Canvas/HSlider" to="Canvas" method="_on_h_slider_value_changed"]
+[connection signal="timeout" from="Canvas/Timer" to="Canvas" method="_on_timer_timeout"]

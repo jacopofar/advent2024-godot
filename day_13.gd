@@ -68,7 +68,6 @@ func solve(input: String) -> void:
 			continue
 		if possible_win[1] != int(possible_win[1]):
 			continue
-		print(cm, possible_win)
 		tot2 += possible_win[0] * 3 + possible_win[1]
 		
 	get_parent().set_solution("Part 1: {0} part 2: {1}".format([tot1, tot2]))
