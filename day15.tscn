@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnlol2njl0kju"]
+
+[ext_resource type="Script" uid="uid://dm7u17i7ru5a7" path="res://day_15.gd" id="1_e2xwc"]
+
+[node name="Day15" type="Window"]
+position = Vector2i(0, 36)
+script = ExtResource("1_e2xwc")
