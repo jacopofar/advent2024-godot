@@ -10,7 +10,8 @@ Sometimes a visualization is shown.
 
 ## Current status
 
-* Day 01 - 13 done
+* Day 01 - 15 done
 * For day 06 there's a visualization of the guard path and potential loops
 * For day 08 there's a visualization of the antennas and related antinodes
 * for day 14 there's an interactive visualization, since the requirement asks to match a pattern "visually". There's a slider (you can also use the keyboard or just wait) and you can find th solution like that
+* day 15 has a weird solution with some commented out code, but works
